@@ -2,24 +2,15 @@ package com.himanshu.eCommerce.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
 
 import com.sun.istack.NotNull;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 @Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Product {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue
 	private long id;
 	@NotNull
 	private String name;
@@ -27,13 +18,51 @@ public class Product {
 	private long price;
 	@NotNull
 	private String details;
-	@NotNull
-	private String pic;
-	@NotNull
-	private String manufacturer;
-	@NotNull
-	private String category;	
 
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public long getPrice() {
+		return price;
+	}
+
+	public void setPrice(long price) {
+		this.price = price;
+	}
+
+	public String getDetails() {
+		return details;
+	}
+
+	public void setDetails(String details) {
+		this.details = details;
+	}
+
+	public Product() {
+		super();
+	}
+
+	public Product(Long id, String name, long price, String details) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.details = details;
+	}
+	
 	
 
 }

@@ -1,1 +1,44 @@
 2023-01-20 10:01:54.930  WARN 13840 --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=10h37m21s432ms616µs900ns).
+2023-01-20 10:39:49.711  INFO 13840 --- [Thread-33] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@7f8361e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2023-01-20 10:39:49.712  INFO 13840 --- [Thread-33] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2023-01-20 10:39:49.720  INFO 13840 --- [Thread-33] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-01-20 10:39:49.722  INFO 13840 --- [Thread-33] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@399d9338{application,/,[file:///C:/Users/2097772/AppData/Local/Temp/1/jetty-docbase.8080.12585471368766434675/, jar:file:/C:/Users/2097772/.m2/repository/org/webjars/swagger-ui/4.15.5/swagger-ui-4.15.5.jar!/META-INF/resources],STOPPED}
+2023-01-20 10:39:49.734  INFO 13840 --- [Thread-33] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-20 10:39:49.739  INFO 13840 --- [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-01-20 10:39:49.785  INFO 13840 --- [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-01-20 10:39:50.097  INFO 13840 --- [restartedMain] c.h.eCommerce.eCommerceApplication       : Starting eCommerceApplication using Java 14.0.2 on LTIN351198 with PID 13840 (C:\Users\2097772\OneDrive - Cognizant\Documents\Selfmade Project\Backend\target\classes started by 2097772 in C:\Users\2097772\OneDrive - Cognizant\Documents\Selfmade Project\Backend)
+2023-01-20 10:39:50.098  INFO 13840 --- [restartedMain] c.h.eCommerce.eCommerceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-01-20 10:39:51.906  INFO 13840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-20 10:39:51.959  INFO 13840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2023-01-20 10:39:52.538  INFO 13840 --- [restartedMain] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 8080
+2023-01-20 10:39:52.538  INFO 13840 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.46.v20220331; built: 2022-03-31T16:38:08.030Z; git: bc17a0369a11ecf40bb92c839b9ef0a8ac50ea18; jvm 14.0.2+12-46
+2023-01-20 10:39:52.542  INFO 13840 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2023-01-20 10:39:52.542  INFO 13840 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2434 ms
+2023-01-20 10:39:52.708  INFO 13840 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2023-01-20 10:39:52.708  INFO 13840 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2023-01-20 10:39:52.709  INFO 13840 --- [restartedMain] org.eclipse.jetty.server.session         : node0 Scavenging every 660000ms
+2023-01-20 10:39:52.711  INFO 13840 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@2eea3e1f{application,/,[file:///C:/Users/2097772/AppData/Local/Temp/1/jetty-docbase.8080.3569502580515479352/, jar:file:/C:/Users/2097772/.m2/repository/org/webjars/swagger-ui/4.15.5/swagger-ui-4.15.5.jar!/META-INF/resources],AVAILABLE}
+2023-01-20 10:39:52.712  INFO 13840 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @157047996ms
+2023-01-20 10:39:52.763  INFO 13840 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-20 10:39:52.789  INFO 13840 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-01-20 10:39:52.851  INFO 13840 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-01-20 10:39:52.855  INFO 13840 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-01-20 10:39:53.093  INFO 13840 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-20 10:39:53.095  INFO 13840 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-20 10:39:53.612  WARN 13840 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-20 10:39:57.259  INFO 13840 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-20 10:39:57.300  INFO 13840 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-01-20 10:39:57.438  INFO 13840 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-20 10:39:57.440  INFO 13840 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-20 10:39:57.446  INFO 13840 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-01-20 10:39:57.463  INFO 13840 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@3f60b283{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2023-01-20 10:39:57.463  INFO 13840 --- [restartedMain] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 8080 (http/1.1) with context path '/'
+2023-01-20 10:39:57.535  INFO 13840 --- [restartedMain] c.h.eCommerce.eCommerceApplication       : Started eCommerceApplication in 7.532 seconds (JVM running for 157052.819)
+2023-01-20 10:39:57.554  INFO 13840 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-01-20 10:40:38.722  INFO 13840 --- [Thread-45] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@3f60b283{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2023-01-20 10:40:38.723  INFO 13840 --- [Thread-45] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2023-01-20 10:40:38.724  INFO 13840 --- [Thread-45] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-01-20 10:40:38.725  INFO 13840 --- [Thread-45] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@2eea3e1f{application,/,[file:///C:/Users/2097772/AppData/Local/Temp/1/jetty-docbase.8080.3569502580515479352/, jar:file:/C:/Users/2097772/.m2/repository/org/webjars/swagger-ui/4.15.5/swagger-ui-4.15.5.jar!/META-INF/resources],STOPPED}
+2023-01-20 10:40:38.757  INFO 13840 --- [Thread-45] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-20 10:40:38.763  INFO 13840 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-01-20 10:40:38.825  INFO 13840 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
